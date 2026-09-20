@@ -1,0 +1,23 @@
+# Runtime dependencies for the experiments in this repository.
+# Python 3.11 or newer.
+
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+
+# Embedding the HH-RLHF comparisons with the frozen MiniLM encoder.
+# Pulls torch and transformers.
+sentence-transformers>=2.2
+
+# Loading Anthropic/hh-rlhf for the benchmark pipeline (scripts/benchmark/).
+# The pooled pipeline (scripts/pooled/) reads the same corpus straight from a
+# local snapshot and does not use this package. See DATA.md.
+datasets>=2.14
+
+# Figure generation. pymupdf is used only to measure the saved PDF, which
+# scripts/make_main_figure.py asserts against the manuscript's text width.
+matplotlib>=3.7
+pymupdf>=1.23
+
+# Tests.
+pytest>=7.4

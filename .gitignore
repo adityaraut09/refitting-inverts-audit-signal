@@ -1,0 +1,15 @@
+# Embedding caches. Large, and regenerated deterministically from the corpus
+# and the frozen encoder.
+cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store

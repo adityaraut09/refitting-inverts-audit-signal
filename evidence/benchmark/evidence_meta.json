@@ -1,0 +1,40 @@
+{
+  "label": "DRAFT1_STAGE1_EVIDENCE",
+  "pool": "hh-rlhf-helpful, n=300, seed=0, sentence-transformer all-MiniLM-L6-v2, d=384",
+  "lam": 0.0001,
+  "n_folds": 5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "holdout_frac": 0.3,
+  "zero_norm_threshold": 1e-08,
+  "budget_rule": "int(0.15 * n_filtered) for E1/E3; Chapter 4 grid for E2",
+  "e2_protocol_source": "pre-existing budget-sweep protocol, re-run verbatim at seed 0",
+  "e2_extension": "the identical grid over split seeds 0..19; labelled an extension",
+  "absorption_protocol_source": "decomp() in scripts/repeated_split_stability.py, applied to E1 and E3 conditions already built there",
+  "reproduction_gates": {
+    "n": 35,
+    "n_pass": 35
+  },
+  "e2_grid_degeneracy": "at n_train in [176, 183] the fractions 0.001, 0.005 and 0.01 all map to max(1, int(frac*n)) = 1 flipped comparison, so the three lowest grid points are the same experiment",
+  "writes_to_results": false
+}

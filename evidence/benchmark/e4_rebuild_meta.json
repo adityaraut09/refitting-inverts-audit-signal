@@ -1,0 +1,43 @@
+{
+  "label": "DRAFT2_E4_REBUILD",
+  "protocol_source": "scripts/repeated_split_stability.py split rule and budget; top-k deletion by the final-margin score under the poisoned refit",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "lam": 0.0001,
+  "depths_base": [
+    5,
+    10,
+    15,
+    20,
+    35,
+    50
+  ],
+  "depths_note": "k = B for that split is added, so the grid has 7 depths per seed",
+  "holdout_filtered": false,
+  "holdout_note": "the holdout is not zero-norm filtered, matching the existing convention; 8 such rows have margin 0 for every theta and are always counted incorrect",
+  "logloss_definition": "unpenalized mean logistic loss on the holdout",
+  "mcnemar": "exact two-sided binomial on paired holdout predictions within a single split; splits are never pooled",
+  "interval_type": "repeated-split stability summary over 20 splits of one pool, NOT a confidence interval",
+  "seed0_reproduces_paper_columns": true,
+  "writes_to_results": false
+}

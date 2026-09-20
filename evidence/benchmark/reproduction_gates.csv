@@ -1,0 +1,36 @@
+gate,recomputed,reference,abs_diff,pass
+E1 seed0 random_flip/self_influence auroc [stored],0.6238461538461538,0.6238461538461538,0.0,True
+E1 seed0 random_flip/cross_fit auroc [stored],0.6115384615384616,0.6115384615384616,0.0,True
+E1 seed0 random_flip/training_dynamics auroc [stored],0.6538461538461539,0.6538461538461539,0.0,True
+E1 seed0 random_flip/ensemble auroc [stored],0.6410256410256411,0.6410256410256411,0.0,True
+E1 seed0 ambiguity_flip/self_influence auroc [stored],0.4828205128205128,0.4828205128205128,0.0,True
+E1 seed0 ambiguity_flip/cross_fit auroc [stored],0.6328205128205128,0.6328205128205128,0.0,True
+E1 seed0 ambiguity_flip/training_dynamics auroc [stored],0.8146153846153846,0.8146153846153846,0.0,True
+E1 seed0 ambiguity_flip/ensemble auroc [stored],0.6623076923076923,0.6623076923076923,0.0,True
+E3 20-split mean alpha=0.0 cross_fit [stored],0.6213396656411286,0.6213396656411286,0.0,True
+E3 20-split mean alpha=0.0 self_influence [stored],0.5338899586045461,0.5338899586045461,0.0,True
+E3 20-split mean alpha=0.0 training_dynamics [stored],0.300202983190494,0.300202983190494,0.0,True
+E3 20-split mean alpha=0.25 cross_fit [stored],0.6131976657860451,0.6131976657860451,0.0,True
+E3 20-split mean alpha=0.25 self_influence [stored],0.6038592313628486,0.6038592313628486,0.0,True
+E3 20-split mean alpha=0.25 training_dynamics [stored],0.43146146938971086,0.4314614693897108,5.551115123125783e-17,True
+E3 20-split mean alpha=0.5 cross_fit [stored],0.571306520882571,0.571306520882571,0.0,True
+E3 20-split mean alpha=0.5 self_influence [stored],0.6381575899650077,0.6381575899650077,0.0,True
+E3 20-split mean alpha=0.5 training_dynamics [stored],0.5438716990273271,0.5438716990273271,0.0,True
+E3 20-split mean alpha=0.75 cross_fit [stored],0.5972916417781361,0.5972916417781361,0.0,True
+E3 20-split mean alpha=0.75 self_influence [stored],0.6858889804478977,0.6858889804478977,0.0,True
+E3 20-split mean alpha=0.75 training_dynamics [stored],0.6745468756316175,0.6745468756316175,0.0,True
+E3 20-split mean alpha=1.0 cross_fit [stored],0.6108499254643289,0.6108499254643289,0.0,True
+E3 20-split mean alpha=1.0 self_influence [stored],0.4761188196462321,0.4761188196462321,0.0,True
+E3 20-split mean alpha=1.0 training_dynamics [stored],0.8264867785148697,0.8264867785148697,0.0,True
+E1 random_flip 20-split mean cross_fit [stored],0.5982779761204889,0.5982779761204889,0.0,True
+E1 random_flip 20-split mean ensemble [stored],0.6027436778052121,0.602743677805212,1.1102230246251565e-16,True
+E1 random_flip 20-split mean self_influence [stored],0.6047195030968697,0.6047195030968697,0.0,True
+E1 random_flip 20-split mean training_dynamics [stored],0.5794184172419669,0.5794184172419669,0.0,True
+E1 gradient_flip 20-split mean self_influence [canonical],0.3052829624056431,0.3052829624056431,0.0,True
+E1 gradient_flip 20-split mean cross_fit [canonical],0.30854981304896467,0.30854981304896467,0.0,True
+E1 gradient_flip 20-split mean training_dynamics [canonical],0.2619535780701295,0.2619535780701294,5.551115123125783e-17,True
+E1 gradient_flip 20-split mean ensemble [canonical],0.27703814990423037,0.27703814990423037,0.0,True
+"gradient_flip margin of reversed rows, poisoned refit [canonical]",2.7783569665948824,2.7783569665948824,0.0,True
+"gradient_flip disagreement of reversed rows, poisoned refit [canonical]",0.013507530626770303,0.013507530626770264,3.8163916471489756e-17,True
+"gradient_flip leverage of reversed rows, poisoned refit [canonical]",1258.444769866171,1258.444769866171,0.0,True
+gradient_flip seed0 self-influence of reversed rows [canonical],6.122350151155637,6.122350151155637,0.0,True

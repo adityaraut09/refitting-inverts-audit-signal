@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+# Puts the repository root on sys.path so tests import `src.*` directly,
+# without any path manipulation in the test modules themselves.
+pythonpath = ["."]
+testpaths = ["tests"]

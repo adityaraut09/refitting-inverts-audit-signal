@@ -1,0 +1,19 @@
+{
+  "label": "DRAFT3_ORIENTATION_AUDIT",
+  "canonical_rule": "j = argmax_i |v_i| with numpy's smallest-index tie-break; if v_j < 0 then v <- -v",
+  "arms": {
+    "raw": "np.linalg.eigh(cov)[1][:, -1], the orientation the stored runs used",
+    "canon_plus": "canonical(raw)",
+    "canon_minus": "-canonical(raw)"
+  },
+  "raw_equals_canon_plus_in_splits": 3,
+  "n_splits": 20,
+  "lam": 0.0001,
+  "budget_rule": "int(0.15 * n_filtered)",
+  "interval_type": "repeated-split stability summary over one 300-comparison pool; not a population confidence interval",
+  "reproduction_gate": {
+    "n": 560,
+    "n_pass": 560
+  },
+  "writes_to_results": false
+}

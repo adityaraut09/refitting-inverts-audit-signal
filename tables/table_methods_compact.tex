@@ -1,0 +1,34 @@
+\begin{table}[t]
+\caption{Attacks and audit scores as implemented. Every score is computed on the
+poisoned training set and increases with suspicion. $m_i$ is the fitted margin,
+$H$ the fitted Hessian, and subscripts $0$ and $P$ the original and poisoned
+labels.}
+\label{tab:methods}
+\centering
+\footnotesize
+% widths: "directional" overflows a 1.3 cm first column by 2.2 pt, so the three
+% are redistributed from 1.3/1.15/4.75 at the same total width. Set here rather
+% than in the emitted file, which is overwritten on every run.
+\begin{tabular}{@{}p{1.5cm}p{1.1cm}p{4.6cm}@{}}
+\toprule
+\textbf{Rule} & \textbf{Reads} & \textbf{Selection or score} \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Attacks, budget $B$}}\\
+random & nothing & uniform subset of size $B$; the control \\[2pt]
+directional & $s_i$, $z_i$ & largest $s_i\langle z_i,v\rangle$ with $v$ the
+canonically signed top eigenvector of $Z^\top Z/n$: a mutually aligned block
+along one axis \\[2pt]
+margin-\newline targeted & $s_i$, $z_i$, $\thh_0$ & window of width $B$ slid by
+$\alpha$ across the $|m_i|$ order; $\alpha=1$ takes the lowest reference
+margins, $\alpha=0$ the highest \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{Audit scores}}\\
+self-\newline influence & $\thh_P$ & $\sigma(-m_i)^2\,z_i^\top H^{-1}z_i$:
+disagreement times leverage \\[2pt]
+out-of-fold & 5 folds of $D_P$ & $1-\sigma(m_i)$ under a head fit on the other
+four folds, folds by index modulo 5 \\[2pt]
+final-\newline margin & $\thh_P$ & $-m_i$, the final fitted margin \\[2pt]
+rank\newline ensemble & all three & mean of the three per-example ranks \\
+\bottomrule
+\end{tabular}
+\end{table}

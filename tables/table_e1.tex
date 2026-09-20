@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\caption{Benchmark. AUROC (with across-split standard deviation) and
+precision at the attack budget, for each attack against each audit score, on the
+poisoned refit. Mean over \vNSeeds\ splits of one \vNPool-comparison HH-RLHF
+helpful-base pool; budget \vBudgetMin--\vBudgetMax\ reversals of
+\vNTrainMin--\vNTrainMax\ training comparisons. Chance AUROC is $0.5$; because
+the review budget equals the number of reversals, precision and recall at that
+budget coincide, and the random-review baseline equals the reversal prevalence
+of about $0.15$. A value below chance means the score ranks reversed
+comparisons as \emph{less} suspicious than retained ones, so the ranking is
+inverted rather than uninformative. The directional row uses the canonical
+orientation defined in Section~\ref{sec:setup}.}
+\label{tab:e1}
+\centering
+\footnotesize
+\begin{tabular}{@{}l cc cc cc cc@{}}
+\toprule
+& \multicolumn{2}{c}{self-influence} & \multicolumn{2}{c}{out-of-fold}
+& \multicolumn{2}{c}{final margin} & \multicolumn{2}{c}{ensemble} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+\textbf{Attack} & AUROC & prec. & AUROC & prec. & AUROC & prec. & AUROC & prec. \\
+\midrule
+random & 0.605\,$\pm$0.046 & 0.245 & 0.598\,$\pm$0.048 & 0.221 & 0.579\,$\pm$0.050 & 0.187 & 0.603\,$\pm$0.045 & 0.238 \\
+directional & 0.305\,$\pm$0.041 & 0.015 & 0.309\,$\pm$0.045 & 0.049 & 0.262\,$\pm$0.059 & 0.000 & 0.277\,$\pm$0.045 & 0.009 \\
+margin-targeted ($\alpha{=}1$) & 0.476\,$\pm$0.042 & 0.072 & 0.611\,$\pm$0.037 & 0.040 & 0.826\,$\pm$0.030 & 0.545 & 0.647\,$\pm$0.036 & 0.146 \\
+\bottomrule
+\end{tabular}
+\end{table*}

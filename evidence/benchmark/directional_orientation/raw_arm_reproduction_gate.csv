@@ -1,0 +1,561 @@
+quantity,stored,raw_arm,abs_diff,match
+E1 seed0 self_influence auroc,0.3166666666666666,0.31666666666666665,5.551115123125783e-17,True
+E1 seed0 cross_fit auroc,0.3082051282051282,0.3082051282051282,0.0,True
+E1 seed0 training_dynamics auroc,0.2969230769230769,0.2969230769230769,0.0,True
+E1 seed0 ensemble auroc,0.292051282051282,0.29205128205128206,5.551115123125783e-17,True
+E1 seed1 self_influence auroc,0.2618441161487519,0.2618441161487519,0.0,True
+E1 seed1 cross_fit auroc,0.3155883851248089,0.31558838512480897,5.551115123125783e-17,True
+E1 seed1 training_dynamics auroc,0.162506367804381,0.16250636780438105,5.551115123125783e-17,True
+E1 seed1 ensemble auroc,0.2179062659195109,0.21790626591951096,5.551115123125783e-17,True
+E1 seed2 self_influence auroc,0.2539336722343258,0.25393367223432584,5.551115123125783e-17,True
+E1 seed2 cross_fit auroc,0.2786250302590172,0.2786250302590172,0.0,True
+E1 seed2 training_dynamics auroc,0.1803437424352457,0.1803437424352457,0.0,True
+E1 seed2 ensemble auroc,0.2182280319535221,0.21822803195352214,2.7755575615628914e-17,True
+E1 seed3 self_influence auroc,0.2885499878963931,0.28854998789639313,5.551115123125783e-17,True
+E1 seed3 cross_fit auroc,0.2783829581215202,0.2783829581215202,0.0,True
+E1 seed3 training_dynamics auroc,0.271362866134108,0.271362866134108,0.0,True
+E1 seed3 ensemble auroc,0.2726942628903413,0.2726942628903413,0.0,True
+E1 seed4 self_influence auroc,0.2815764482431149,0.2815764482431149,0.0,True
+E1 seed4 cross_fit auroc,0.277065527065527,0.27706552706552706,5.551115123125783e-17,True
+E1 seed4 training_dynamics auroc,0.25,0.25,0.0,True
+E1 seed4 ensemble auroc,0.2621082621082621,0.2621082621082621,0.0,True
+E1 seed5 self_influence auroc,0.3000509424350484,0.3000509424350484,0.0,True
+E1 seed5 cross_fit auroc,0.3138053998981151,0.3138053998981151,0.0,True
+E1 seed5 training_dynamics auroc,0.2661742231278655,0.26617422312786554,5.551115123125783e-17,True
+E1 seed5 ensemble auroc,0.2860417727967397,0.2860417727967397,0.0,True
+E1 seed6 self_influence auroc,0.2655122655122655,0.26551226551226553,5.551115123125783e-17,True
+E1 seed6 cross_fit auroc,0.25998075998076,0.25998075998076,0.0,True
+E1 seed6 training_dynamics auroc,0.1931216931216931,0.1931216931216931,0.0,True
+E1 seed6 ensemble auroc,0.2229437229437229,0.22294372294372294,5.551115123125783e-17,True
+E1 seed7 self_influence auroc,0.2982051282051282,0.2982051282051282,0.0,True
+E1 seed7 cross_fit auroc,0.2764102564102564,0.2764102564102564,0.0,True
+E1 seed7 training_dynamics auroc,0.2892307692307692,0.28923076923076924,5.551115123125783e-17,True
+E1 seed7 ensemble auroc,0.2773076923076923,0.2773076923076923,0.0,True
+E1 seed8 self_influence auroc,0.2905982905982906,0.2905982905982906,0.0,True
+E1 seed8 cross_fit auroc,0.2893413775766717,0.2893413775766717,0.0,True
+E1 seed8 training_dynamics auroc,0.2036199095022624,0.20361990950226244,5.551115123125783e-17,True
+E1 seed8 ensemble auroc,0.2467320261437908,0.24673202614379086,5.551115123125783e-17,True
+E1 seed9 self_influence auroc,0.3125151295085935,0.31251512950859356,5.551115123125783e-17,True
+E1 seed9 cross_fit auroc,0.3088840474461389,0.30888404744613895,5.551115123125783e-17,True
+E1 seed9 training_dynamics auroc,0.279593318809005,0.27959331880900506,5.551115123125783e-17,True
+E1 seed9 ensemble auroc,0.2896393125151295,0.28963931251512953,5.551115123125783e-17,True
+E1 seed10 self_influence auroc,0.3354838709677419,0.33548387096774196,5.551115123125783e-17,True
+E1 seed10 cross_fit auroc,0.2743130227001195,0.2743130227001195,0.0,True
+E1 seed10 training_dynamics auroc,0.2195937873357228,0.21959378733572282,2.7755575615628914e-17,True
+E1 seed10 ensemble auroc,0.2655913978494623,0.26559139784946234,5.551115123125783e-17,True
+E1 seed11 self_influence auroc,0.2383603238866396,0.23836032388663966,5.551115123125783e-17,True
+E1 seed11 cross_fit auroc,0.1998987854251012,0.19989878542510123,2.7755575615628914e-17,True
+E1 seed11 training_dynamics auroc,0.1958502024291498,0.1958502024291498,0.0,True
+E1 seed11 ensemble auroc,0.1964827935222672,0.19648279352226722,2.7755575615628914e-17,True
+E1 seed12 self_influence auroc,0.2384410554345195,0.2384410554345195,0.0,True
+E1 seed12 cross_fit auroc,0.1641249092229484,0.16412490922294845,5.551115123125783e-17,True
+E1 seed12 training_dynamics auroc,0.1745340111353183,0.17453401113531833,2.7755575615628914e-17,True
+E1 seed12 ensemble auroc,0.1584362139917695,0.15843621399176955,5.551115123125783e-17,True
+E1 seed13 self_influence auroc,0.2322975038206826,0.23229750382068262,2.7755575615628914e-17,True
+E1 seed13 cross_fit auroc,0.205552725420275,0.20555272542027508,8.326672684688674e-17,True
+E1 seed13 training_dynamics auroc,0.1711665817626082,0.17116658176260827,5.551115123125783e-17,True
+E1 seed13 ensemble auroc,0.1762608252674478,0.1762608252674478,0.0,True
+E1 seed14 self_influence auroc,0.3280542986425339,0.32805429864253394,5.551115123125783e-17,True
+E1 seed14 cross_fit auroc,0.3129713423831071,0.3129713423831071,0.0,True
+E1 seed14 training_dynamics auroc,0.2883358471593765,0.28833584715937655,5.551115123125783e-17,True
+E1 seed14 ensemble auroc,0.2998994469582705,0.2998994469582705,0.0,True
+E1 seed15 self_influence auroc,0.2623857623857624,0.2623857623857624,0.0,True
+E1 seed15 cross_fit auroc,0.2371332371332371,0.23713323713323714,2.7755575615628914e-17,True
+E1 seed15 training_dynamics auroc,0.1632996632996633,0.1632996632996633,0.0,True
+E1 seed15 ensemble auroc,0.1984126984126984,0.1984126984126984,0.0,True
+E1 seed16 self_influence auroc,0.225071225071225,0.22507122507122507,5.551115123125783e-17,True
+E1 seed16 cross_fit auroc,0.25332383665717,0.25332383665717,0.0,True
+E1 seed16 training_dynamics auroc,0.1669040835707502,0.16690408357075023,2.7755575615628914e-17,True
+E1 seed16 ensemble auroc,0.2010921177587844,0.20109211775878444,2.7755575615628914e-17,True
+E1 seed17 self_influence auroc,0.3333333333333333,0.3333333333333333,0.0,True
+E1 seed17 cross_fit auroc,0.4045400238948626,0.4045400238948626,0.0,True
+E1 seed17 training_dynamics auroc,0.2265232974910394,0.22652329749103942,2.7755575615628914e-17,True
+E1 seed17 ensemble auroc,0.310752688172043,0.310752688172043,0.0,True
+E1 seed18 self_influence auroc,0.3094752929190015,0.30947529291900155,5.551115123125783e-17,True
+E1 seed18 cross_fit auroc,0.314569536423841,0.31456953642384106,5.551115123125783e-17,True
+E1 seed18 training_dynamics auroc,0.2809475292919001,0.28094752929190014,5.551115123125783e-17,True
+E1 seed18 ensemble auroc,0.2920275089149261,0.2920275089149261,0.0,True
+E1 seed19 self_influence auroc,0.2901393908105317,0.29013939081053175,5.551115123125783e-17,True
+E1 seed19 cross_fit auroc,0.3291171915332989,0.32911719153329894,5.551115123125783e-17,True
+E1 seed19 training_dynamics auroc,0.1923076923076923,0.19230769230769232,2.7755575615628914e-17,True
+E1 seed19 ensemble auroc,0.2474186886938564,0.24741868869385647,8.326672684688674e-17,True
+stages seed0 stage0_pre_attack self_influence auroc,0.7156410256410256,0.7156410256410256,0.0,True
+stages seed0 stage0_pre_attack self_influence prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed0 stage0_pre_attack training_dynamics auroc,0.5784615384615385,0.5784615384615385,0.0,True
+stages seed0 stage0_pre_attack training_dynamics prec,0.1923076923076923,0.19230769230769232,2.7755575615628914e-17,True
+stages seed0 stage0_pre_attack cross_fit auroc,0.75,0.75,0.0,True
+stages seed0 stage0_pre_attack cross_fit prec,0.5384615384615384,0.5384615384615384,0.0,True
+stages seed0 stage0_pre_attack ensemble auroc,0.7033333333333334,0.7033333333333334,0.0,True
+stages seed0 stage0_pre_attack ensemble prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed0 stage1_flipped_clean_models self_influence auroc,0.9928205128205128,0.9928205128205129,1.1102230246251565e-16,True
+stages seed0 stage1_flipped_clean_models self_influence prec,0.9615384615384616,0.9615384615384616,0.0,True
+stages seed0 stage1_flipped_clean_models training_dynamics auroc,0.9974358974358974,0.9974358974358974,0.0,True
+stages seed0 stage1_flipped_clean_models training_dynamics prec,0.9230769230769232,0.9230769230769231,1.1102230246251565e-16,True
+stages seed0 stage1_flipped_clean_models cross_fit auroc,0.4341025641025641,0.4341025641025641,0.0,True
+stages seed0 stage1_flipped_clean_models cross_fit prec,0.1538461538461538,0.15384615384615385,5.551115123125783e-17,True
+stages seed0 stage1_flipped_clean_models ensemble auroc,0.8743589743589744,0.8743589743589744,0.0,True
+stages seed0 stage1_flipped_clean_models ensemble prec,0.4230769230769231,0.4230769230769231,0.0,True
+stages seed0 stage2_poisoned_refit self_influence auroc,0.3166666666666666,0.31666666666666665,5.551115123125783e-17,True
+stages seed0 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed0 stage2_poisoned_refit training_dynamics auroc,0.2969230769230769,0.2969230769230769,0.0,True
+stages seed0 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed0 stage2_poisoned_refit cross_fit auroc,0.3082051282051282,0.3082051282051282,0.0,True
+stages seed0 stage2_poisoned_refit cross_fit prec,0.0,0.0,0.0,True
+stages seed0 stage2_poisoned_refit ensemble auroc,0.292051282051282,0.29205128205128206,5.551115123125783e-17,True
+stages seed0 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed1 stage0_pre_attack self_influence auroc,0.2580234335201222,0.25802343352012225,5.551115123125783e-17,True
+stages seed1 stage0_pre_attack self_influence prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed1 stage0_pre_attack training_dynamics auroc,0.1543555781966378,0.1543555781966378,0.0,True
+stages seed1 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed1 stage0_pre_attack cross_fit auroc,0.2674477840040754,0.2674477840040754,0.0,True
+stages seed1 stage0_pre_attack cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed1 stage0_pre_attack ensemble auroc,0.2119205298013245,0.2119205298013245,0.0,True
+stages seed1 stage0_pre_attack ensemble prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed1 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed1 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed1 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed1 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed1 stage1_flipped_clean_models cross_fit auroc,0.7682119205298014,0.7682119205298014,0.0,True
+stages seed1 stage1_flipped_clean_models cross_fit prec,0.5,0.5,0.0,True
+stages seed1 stage1_flipped_clean_models ensemble auroc,0.9560621497707592,0.9560621497707591,1.1102230246251565e-16,True
+stages seed1 stage1_flipped_clean_models ensemble prec,0.7692307692307693,0.7692307692307693,0.0,True
+stages seed1 stage2_poisoned_refit self_influence auroc,0.2618441161487519,0.2618441161487519,0.0,True
+stages seed1 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed1 stage2_poisoned_refit training_dynamics auroc,0.162506367804381,0.16250636780438105,5.551115123125783e-17,True
+stages seed1 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed1 stage2_poisoned_refit cross_fit auroc,0.3155883851248089,0.31558838512480897,5.551115123125783e-17,True
+stages seed1 stage2_poisoned_refit cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed1 stage2_poisoned_refit ensemble auroc,0.2179062659195109,0.21790626591951096,5.551115123125783e-17,True
+stages seed1 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed2 stage0_pre_attack self_influence auroc,0.1984991527475187,0.19849915274751875,5.551115123125783e-17,True
+stages seed2 stage0_pre_attack self_influence prec,0.0,0.0,0.0,True
+stages seed2 stage0_pre_attack training_dynamics auroc,0.1404018397482449,0.14040183974824497,5.551115123125783e-17,True
+stages seed2 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed2 stage0_pre_attack cross_fit auroc,0.1801016702977487,0.18010167029774873,2.7755575615628914e-17,True
+stages seed2 stage0_pre_attack cross_fit prec,0.0,0.0,0.0,True
+stages seed2 stage0_pre_attack ensemble auroc,0.144880174291939,0.144880174291939,0.0,True
+stages seed2 stage0_pre_attack ensemble prec,0.0,0.0,0.0,True
+stages seed2 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed2 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed2 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed2 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed2 stage1_flipped_clean_models cross_fit auroc,0.8361171629145485,0.8361171629145485,0.0,True
+stages seed2 stage1_flipped_clean_models cross_fit prec,0.5185185185185185,0.5185185185185185,0.0,True
+stages seed2 stage1_flipped_clean_models ensemble auroc,0.9774872912127814,0.9774872912127814,0.0,True
+stages seed2 stage1_flipped_clean_models ensemble prec,0.8518518518518519,0.8518518518518519,0.0,True
+stages seed2 stage2_poisoned_refit self_influence auroc,0.2539336722343258,0.25393367223432584,5.551115123125783e-17,True
+stages seed2 stage2_poisoned_refit self_influence prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed2 stage2_poisoned_refit training_dynamics auroc,0.1803437424352457,0.1803437424352457,0.0,True
+stages seed2 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed2 stage2_poisoned_refit cross_fit auroc,0.2786250302590172,0.2786250302590172,0.0,True
+stages seed2 stage2_poisoned_refit cross_fit prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed2 stage2_poisoned_refit ensemble auroc,0.2182280319535221,0.21822803195352214,2.7755575615628914e-17,True
+stages seed2 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed3 stage0_pre_attack self_influence auroc,0.6407649479544905,0.6407649479544905,0.0,True
+stages seed3 stage0_pre_attack self_influence prec,0.3333333333333333,0.3333333333333333,0.0,True
+stages seed3 stage0_pre_attack training_dynamics auroc,0.5083514887436456,0.5083514887436456,0.0,True
+stages seed3 stage0_pre_attack training_dynamics prec,0.1111111111111111,0.1111111111111111,0.0,True
+stages seed3 stage0_pre_attack cross_fit auroc,0.6698136044541273,0.6698136044541273,0.0,True
+stages seed3 stage0_pre_attack cross_fit prec,0.3703703703703703,0.37037037037037035,5.551115123125783e-17,True
+stages seed3 stage0_pre_attack ensemble auroc,0.6218833212297264,0.6218833212297264,0.0,True
+stages seed3 stage0_pre_attack ensemble prec,0.3333333333333333,0.3333333333333333,0.0,True
+stages seed3 stage1_flipped_clean_models self_influence auroc,0.990559186637618,0.990559186637618,0.0,True
+stages seed3 stage1_flipped_clean_models self_influence prec,0.925925925925926,0.9259259259259259,1.1102230246251565e-16,True
+stages seed3 stage1_flipped_clean_models training_dynamics auroc,0.9937061244250788,0.9937061244250787,1.1102230246251565e-16,True
+stages seed3 stage1_flipped_clean_models training_dynamics prec,0.925925925925926,0.9259259259259259,1.1102230246251565e-16,True
+stages seed3 stage1_flipped_clean_models cross_fit auroc,0.5405470830307432,0.5405470830307432,0.0,True
+stages seed3 stage1_flipped_clean_models cross_fit prec,0.2222222222222222,0.2222222222222222,0.0,True
+stages seed3 stage1_flipped_clean_models ensemble auroc,0.8925199709513435,0.8925199709513435,0.0,True
+stages seed3 stage1_flipped_clean_models ensemble prec,0.5555555555555556,0.5555555555555556,0.0,True
+stages seed3 stage2_poisoned_refit self_influence auroc,0.2885499878963931,0.28854998789639313,5.551115123125783e-17,True
+stages seed3 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed3 stage2_poisoned_refit training_dynamics auroc,0.271362866134108,0.271362866134108,0.0,True
+stages seed3 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed3 stage2_poisoned_refit cross_fit auroc,0.2783829581215202,0.2783829581215202,0.0,True
+stages seed3 stage2_poisoned_refit cross_fit prec,0.0,0.0,0.0,True
+stages seed3 stage2_poisoned_refit ensemble auroc,0.2726942628903413,0.2726942628903413,0.0,True
+stages seed3 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed4 stage0_pre_attack self_influence auroc,0.6873219373219374,0.6873219373219374,0.0,True
+stages seed4 stage0_pre_attack self_influence prec,0.3703703703703703,0.37037037037037035,5.551115123125783e-17,True
+stages seed4 stage0_pre_attack training_dynamics auroc,0.5311016144349477,0.5311016144349477,0.0,True
+stages seed4 stage0_pre_attack training_dynamics prec,0.1851851851851851,0.18518518518518517,8.326672684688674e-17,True
+stages seed4 stage0_pre_attack cross_fit auroc,0.7110636277302944,0.7110636277302944,0.0,True
+stages seed4 stage0_pre_attack cross_fit prec,0.4074074074074074,0.4074074074074074,0.0,True
+stages seed4 stage0_pre_attack ensemble auroc,0.6593067426400759,0.6593067426400759,0.0,True
+stages seed4 stage0_pre_attack ensemble prec,0.3703703703703703,0.37037037037037035,5.551115123125783e-17,True
+stages seed4 stage1_flipped_clean_models self_influence auroc,0.9952516619183286,0.9952516619183286,0.0,True
+stages seed4 stage1_flipped_clean_models self_influence prec,0.9629629629629628,0.9629629629629629,1.1102230246251565e-16,True
+stages seed4 stage1_flipped_clean_models training_dynamics auroc,0.99335232668566,0.99335232668566,0.0,True
+stages seed4 stage1_flipped_clean_models training_dynamics prec,0.925925925925926,0.9259259259259259,1.1102230246251565e-16,True
+stages seed4 stage1_flipped_clean_models cross_fit auroc,0.4795821462488129,0.4795821462488129,0.0,True
+stages seed4 stage1_flipped_clean_models cross_fit prec,0.1851851851851851,0.18518518518518517,8.326672684688674e-17,True
+stages seed4 stage1_flipped_clean_models ensemble auroc,0.8790360873694207,0.8790360873694207,0.0,True
+stages seed4 stage1_flipped_clean_models ensemble prec,0.4814814814814814,0.48148148148148145,5.551115123125783e-17,True
+stages seed4 stage2_poisoned_refit self_influence auroc,0.2815764482431149,0.2815764482431149,0.0,True
+stages seed4 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed4 stage2_poisoned_refit training_dynamics auroc,0.25,0.25,0.0,True
+stages seed4 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed4 stage2_poisoned_refit cross_fit auroc,0.277065527065527,0.27706552706552706,5.551115123125783e-17,True
+stages seed4 stage2_poisoned_refit cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed4 stage2_poisoned_refit ensemble auroc,0.2621082621082621,0.2621082621082621,0.0,True
+stages seed4 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed5 stage0_pre_attack self_influence auroc,0.6676006113092205,0.6676006113092205,0.0,True
+stages seed5 stage0_pre_attack self_influence prec,0.3461538461538461,0.34615384615384615,5.551115123125783e-17,True
+stages seed5 stage0_pre_attack training_dynamics auroc,0.5104431991849211,0.5104431991849211,0.0,True
+stages seed5 stage0_pre_attack training_dynamics prec,0.1538461538461538,0.15384615384615385,5.551115123125783e-17,True
+stages seed5 stage0_pre_attack cross_fit auroc,0.67396841569027,0.67396841569027,0.0,True
+stages seed5 stage0_pre_attack cross_fit prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed5 stage0_pre_attack ensemble auroc,0.6318135506877228,0.6318135506877228,0.0,True
+stages seed5 stage0_pre_attack ensemble prec,0.2692307692307692,0.2692307692307692,0.0,True
+stages seed5 stage1_flipped_clean_models self_influence auroc,0.9946510443199184,0.9946510443199185,1.1102230246251565e-16,True
+stages seed5 stage1_flipped_clean_models self_influence prec,0.9230769230769232,0.9230769230769231,1.1102230246251565e-16,True
+stages seed5 stage1_flipped_clean_models training_dynamics auroc,0.9946510443199184,0.9946510443199185,1.1102230246251565e-16,True
+stages seed5 stage1_flipped_clean_models training_dynamics prec,0.8846153846153846,0.8846153846153846,0.0,True
+stages seed5 stage1_flipped_clean_models cross_fit auroc,0.5025471217524198,0.5025471217524198,0.0,True
+stages seed5 stage1_flipped_clean_models cross_fit prec,0.2307692307692307,0.23076923076923078,8.326672684688674e-17,True
+stages seed5 stage1_flipped_clean_models ensemble auroc,0.8797758532857871,0.8797758532857871,0.0,True
+stages seed5 stage1_flipped_clean_models ensemble prec,0.4615384615384615,0.46153846153846156,5.551115123125783e-17,True
+stages seed5 stage2_poisoned_refit self_influence auroc,0.3000509424350484,0.3000509424350484,0.0,True
+stages seed5 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed5 stage2_poisoned_refit training_dynamics auroc,0.2661742231278655,0.26617422312786554,5.551115123125783e-17,True
+stages seed5 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed5 stage2_poisoned_refit cross_fit auroc,0.3138053998981151,0.3138053998981151,0.0,True
+stages seed5 stage2_poisoned_refit cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed5 stage2_poisoned_refit ensemble auroc,0.2860417727967397,0.2860417727967397,0.0,True
+stages seed5 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed6 stage0_pre_attack self_influence auroc,0.2181337181337181,0.21813371813371812,2.7755575615628914e-17,True
+stages seed6 stage0_pre_attack self_influence prec,0.0,0.0,0.0,True
+stages seed6 stage0_pre_attack training_dynamics auroc,0.1495911495911495,0.14959114959114958,8.326672684688674e-17,True
+stages seed6 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed6 stage0_pre_attack cross_fit auroc,0.2614237614237614,0.26142376142376145,5.551115123125783e-17,True
+stages seed6 stage0_pre_attack cross_fit prec,0.1481481481481481,0.14814814814814814,2.7755575615628914e-17,True
+stages seed6 stage0_pre_attack ensemble auroc,0.1927609427609427,0.19276094276094277,8.326672684688674e-17,True
+stages seed6 stage0_pre_attack ensemble prec,0.0,0.0,0.0,True
+stages seed6 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed6 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed6 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed6 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed6 stage1_flipped_clean_models cross_fit auroc,0.7741702741702742,0.7741702741702742,0.0,True
+stages seed6 stage1_flipped_clean_models cross_fit prec,0.4814814814814814,0.48148148148148145,5.551115123125783e-17,True
+stages seed6 stage1_flipped_clean_models ensemble auroc,0.9587542087542088,0.9587542087542088,0.0,True
+stages seed6 stage1_flipped_clean_models ensemble prec,0.7777777777777778,0.7777777777777778,0.0,True
+stages seed6 stage2_poisoned_refit self_influence auroc,0.2655122655122655,0.26551226551226553,5.551115123125783e-17,True
+stages seed6 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed6 stage2_poisoned_refit training_dynamics auroc,0.1931216931216931,0.1931216931216931,0.0,True
+stages seed6 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed6 stage2_poisoned_refit cross_fit auroc,0.25998075998076,0.25998075998076,0.0,True
+stages seed6 stage2_poisoned_refit cross_fit prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed6 stage2_poisoned_refit ensemble auroc,0.2229437229437229,0.22294372294372294,5.551115123125783e-17,True
+stages seed6 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed7 stage0_pre_attack self_influence auroc,0.6984615384615385,0.6984615384615385,0.0,True
+stages seed7 stage0_pre_attack self_influence prec,0.4230769230769231,0.4230769230769231,0.0,True
+stages seed7 stage0_pre_attack training_dynamics auroc,0.5671794871794872,0.5671794871794872,0.0,True
+stages seed7 stage0_pre_attack training_dynamics prec,0.1538461538461538,0.15384615384615385,5.551115123125783e-17,True
+stages seed7 stage0_pre_attack cross_fit auroc,0.658974358974359,0.658974358974359,0.0,True
+stages seed7 stage0_pre_attack cross_fit prec,0.3461538461538461,0.34615384615384615,5.551115123125783e-17,True
+stages seed7 stage0_pre_attack ensemble auroc,0.6617948717948718,0.6617948717948718,0.0,True
+stages seed7 stage0_pre_attack ensemble prec,0.3461538461538461,0.34615384615384615,5.551115123125783e-17,True
+stages seed7 stage1_flipped_clean_models self_influence auroc,0.9856410256410256,0.9856410256410256,0.0,True
+stages seed7 stage1_flipped_clean_models self_influence prec,0.9230769230769232,0.9230769230769231,1.1102230246251565e-16,True
+stages seed7 stage1_flipped_clean_models training_dynamics auroc,0.9897435897435898,0.9897435897435898,0.0,True
+stages seed7 stage1_flipped_clean_models training_dynamics prec,0.8846153846153846,0.8846153846153846,0.0,True
+stages seed7 stage1_flipped_clean_models cross_fit auroc,0.4833333333333333,0.48333333333333334,5.551115123125783e-17,True
+stages seed7 stage1_flipped_clean_models cross_fit prec,0.3076923076923077,0.3076923076923077,0.0,True
+stages seed7 stage1_flipped_clean_models ensemble auroc,0.865897435897436,0.865897435897436,0.0,True
+stages seed7 stage1_flipped_clean_models ensemble prec,0.4615384615384615,0.46153846153846156,5.551115123125783e-17,True
+stages seed7 stage2_poisoned_refit self_influence auroc,0.2982051282051282,0.2982051282051282,0.0,True
+stages seed7 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed7 stage2_poisoned_refit training_dynamics auroc,0.2892307692307692,0.28923076923076924,5.551115123125783e-17,True
+stages seed7 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed7 stage2_poisoned_refit cross_fit auroc,0.2764102564102564,0.2764102564102564,0.0,True
+stages seed7 stage2_poisoned_refit cross_fit prec,0.0,0.0,0.0,True
+stages seed7 stage2_poisoned_refit ensemble auroc,0.2773076923076923,0.2773076923076923,0.0,True
+stages seed7 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed8 stage0_pre_attack self_influence auroc,0.2121669180492709,0.21216691804927099,8.326672684688674e-17,True
+stages seed8 stage0_pre_attack self_influence prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed8 stage0_pre_attack training_dynamics auroc,0.1470588235294117,0.14705882352941177,8.326672684688674e-17,True
+stages seed8 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed8 stage0_pre_attack cross_fit auroc,0.2182001005530417,0.21820010055304173,2.7755575615628914e-17,True
+stages seed8 stage0_pre_attack cross_fit prec,0.1153846153846153,0.11538461538461539,9.71445146547012e-17,True
+stages seed8 stage0_pre_attack ensemble auroc,0.1787330316742081,0.17873303167420815,5.551115123125783e-17,True
+stages seed8 stage0_pre_attack ensemble prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed8 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed8 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed8 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed8 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed8 stage1_flipped_clean_models cross_fit auroc,0.8562091503267973,0.8562091503267973,0.0,True
+stages seed8 stage1_flipped_clean_models cross_fit prec,0.6923076923076923,0.6923076923076923,0.0,True
+stages seed8 stage1_flipped_clean_models ensemble auroc,0.970211161387632,0.970211161387632,0.0,True
+stages seed8 stage1_flipped_clean_models ensemble prec,0.8461538461538461,0.8461538461538461,0.0,True
+stages seed8 stage2_poisoned_refit self_influence auroc,0.2905982905982906,0.2905982905982906,0.0,True
+stages seed8 stage2_poisoned_refit self_influence prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed8 stage2_poisoned_refit training_dynamics auroc,0.2036199095022624,0.20361990950226244,5.551115123125783e-17,True
+stages seed8 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed8 stage2_poisoned_refit cross_fit auroc,0.2893413775766717,0.2893413775766717,0.0,True
+stages seed8 stage2_poisoned_refit cross_fit prec,0.1153846153846153,0.11538461538461539,9.71445146547012e-17,True
+stages seed8 stage2_poisoned_refit ensemble auroc,0.2467320261437908,0.24673202614379086,5.551115123125783e-17,True
+stages seed8 stage2_poisoned_refit ensemble prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed9 stage0_pre_attack self_influence auroc,0.6492374727668845,0.6492374727668845,0.0,True
+stages seed9 stage0_pre_attack self_influence prec,0.3333333333333333,0.3333333333333333,0.0,True
+stages seed9 stage0_pre_attack training_dynamics auroc,0.5061728395061729,0.5061728395061729,0.0,True
+stages seed9 stage0_pre_attack training_dynamics prec,0.1481481481481481,0.14814814814814814,2.7755575615628914e-17,True
+stages seed9 stage0_pre_attack cross_fit auroc,0.6986201888162672,0.6986201888162672,0.0,True
+stages seed9 stage0_pre_attack cross_fit prec,0.3333333333333333,0.3333333333333333,0.0,True
+stages seed9 stage0_pre_attack ensemble auroc,0.6299927378358751,0.6299927378358751,0.0,True
+stages seed9 stage0_pre_attack ensemble prec,0.2962962962962963,0.2962962962962963,0.0,True
+stages seed9 stage1_flipped_clean_models self_influence auroc,0.9849915274751876,0.9849915274751876,0.0,True
+stages seed9 stage1_flipped_clean_models self_influence prec,0.8888888888888888,0.8888888888888888,0.0,True
+stages seed9 stage1_flipped_clean_models training_dynamics auroc,0.982570806100218,0.9825708061002179,1.1102230246251565e-16,True
+stages seed9 stage1_flipped_clean_models training_dynamics prec,0.8888888888888888,0.8888888888888888,0.0,True
+stages seed9 stage1_flipped_clean_models cross_fit auroc,0.475913822319051,0.47591382231905105,5.551115123125783e-17,True
+stages seed9 stage1_flipped_clean_models cross_fit prec,0.2222222222222222,0.2222222222222222,0.0,True
+stages seed9 stage1_flipped_clean_models ensemble auroc,0.8686758654078915,0.8686758654078915,0.0,True
+stages seed9 stage1_flipped_clean_models ensemble prec,0.4444444444444444,0.4444444444444444,0.0,True
+stages seed9 stage2_poisoned_refit self_influence auroc,0.3125151295085935,0.31251512950859356,5.551115123125783e-17,True
+stages seed9 stage2_poisoned_refit self_influence prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed9 stage2_poisoned_refit training_dynamics auroc,0.279593318809005,0.27959331880900506,5.551115123125783e-17,True
+stages seed9 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed9 stage2_poisoned_refit cross_fit auroc,0.3088840474461389,0.30888404744613895,5.551115123125783e-17,True
+stages seed9 stage2_poisoned_refit cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed9 stage2_poisoned_refit ensemble auroc,0.2896393125151295,0.28963931251512953,5.551115123125783e-17,True
+stages seed9 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed10 stage0_pre_attack self_influence auroc,0.1321385902031063,0.13213859020310634,2.7755575615628914e-17,True
+stages seed10 stage0_pre_attack self_influence prec,0.0,0.0,0.0,True
+stages seed10 stage0_pre_attack training_dynamics auroc,0.0912783751493429,0.0912783751493429,0.0,True
+stages seed10 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed10 stage0_pre_attack cross_fit auroc,0.1856630824372759,0.18566308243727597,8.326672684688674e-17,True
+stages seed10 stage0_pre_attack cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed10 stage0_pre_attack ensemble auroc,0.1186379928315412,0.11863799283154122,2.7755575615628914e-17,True
+stages seed10 stage0_pre_attack ensemble prec,0.0,0.0,0.0,True
+stages seed10 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed10 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed10 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed10 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed10 stage1_flipped_clean_models cross_fit auroc,0.8661887694145759,0.8661887694145759,0.0,True
+stages seed10 stage1_flipped_clean_models cross_fit prec,0.6296296296296297,0.6296296296296297,0.0,True
+stages seed10 stage1_flipped_clean_models ensemble auroc,0.977299880525687,0.977299880525687,0.0,True
+stages seed10 stage1_flipped_clean_models ensemble prec,0.8518518518518519,0.8518518518518519,0.0,True
+stages seed10 stage2_poisoned_refit self_influence auroc,0.3354838709677419,0.33548387096774196,5.551115123125783e-17,True
+stages seed10 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed10 stage2_poisoned_refit training_dynamics auroc,0.2195937873357228,0.21959378733572282,2.7755575615628914e-17,True
+stages seed10 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed10 stage2_poisoned_refit cross_fit auroc,0.2743130227001195,0.2743130227001195,0.0,True
+stages seed10 stage2_poisoned_refit cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed10 stage2_poisoned_refit ensemble auroc,0.2655913978494623,0.26559139784946234,5.551115123125783e-17,True
+stages seed10 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed11 stage0_pre_attack self_influence auroc,0.2502530364372469,0.25025303643724695,5.551115123125783e-17,True
+stages seed11 stage0_pre_attack self_influence prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed11 stage0_pre_attack training_dynamics auroc,0.1763663967611336,0.1763663967611336,0.0,True
+stages seed11 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed11 stage0_pre_attack cross_fit auroc,0.2760627530364372,0.27606275303643724,5.551115123125783e-17,True
+stages seed11 stage0_pre_attack cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed11 stage0_pre_attack ensemble auroc,0.2173582995951417,0.2173582995951417,0.0,True
+stages seed11 stage0_pre_attack ensemble prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed11 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed11 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed11 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed11 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed11 stage1_flipped_clean_models cross_fit auroc,0.7856781376518218,0.7856781376518218,0.0,True
+stages seed11 stage1_flipped_clean_models cross_fit prec,0.4230769230769231,0.4230769230769231,0.0,True
+stages seed11 stage1_flipped_clean_models ensemble auroc,0.9678643724696356,0.9678643724696356,0.0,True
+stages seed11 stage1_flipped_clean_models ensemble prec,0.8076923076923077,0.8076923076923077,0.0,True
+stages seed11 stage2_poisoned_refit self_influence auroc,0.2383603238866396,0.23836032388663966,5.551115123125783e-17,True
+stages seed11 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed11 stage2_poisoned_refit training_dynamics auroc,0.1958502024291498,0.1958502024291498,0.0,True
+stages seed11 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed11 stage2_poisoned_refit cross_fit auroc,0.1998987854251012,0.19989878542510123,2.7755575615628914e-17,True
+stages seed11 stage2_poisoned_refit cross_fit prec,0.0,0.0,0.0,True
+stages seed11 stage2_poisoned_refit ensemble auroc,0.1964827935222672,0.19648279352226722,2.7755575615628914e-17,True
+stages seed11 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed12 stage0_pre_attack self_influence auroc,0.1919632050351004,0.19196320503510045,5.551115123125783e-17,True
+stages seed12 stage0_pre_attack self_influence prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed12 stage0_pre_attack training_dynamics auroc,0.1503267973856209,0.1503267973856209,0.0,True
+stages seed12 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed12 stage0_pre_attack cross_fit auroc,0.1767126603727911,0.1767126603727911,0.0,True
+stages seed12 stage0_pre_attack cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed12 stage0_pre_attack ensemble auroc,0.1499636891793754,0.14996368917937544,5.551115123125783e-17,True
+stages seed12 stage0_pre_attack ensemble prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed12 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed12 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed12 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed12 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed12 stage1_flipped_clean_models cross_fit auroc,0.8090050835148874,0.8090050835148874,0.0,True
+stages seed12 stage1_flipped_clean_models cross_fit prec,0.4814814814814814,0.48148148148148145,5.551115123125783e-17,True
+stages seed12 stage1_flipped_clean_models ensemble auroc,0.976882110869039,0.976882110869039,0.0,True
+stages seed12 stage1_flipped_clean_models ensemble prec,0.7777777777777778,0.7777777777777778,0.0,True
+stages seed12 stage2_poisoned_refit self_influence auroc,0.2384410554345195,0.2384410554345195,0.0,True
+stages seed12 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed12 stage2_poisoned_refit training_dynamics auroc,0.1745340111353183,0.17453401113531833,2.7755575615628914e-17,True
+stages seed12 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed12 stage2_poisoned_refit cross_fit auroc,0.1641249092229484,0.16412490922294845,5.551115123125783e-17,True
+stages seed12 stage2_poisoned_refit cross_fit prec,0.0,0.0,0.0,True
+stages seed12 stage2_poisoned_refit ensemble auroc,0.1584362139917695,0.15843621399176955,5.551115123125783e-17,True
+stages seed12 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed13 stage0_pre_attack self_influence auroc,0.2626082526744778,0.26260825267447785,5.551115123125783e-17,True
+stages seed13 stage0_pre_attack self_influence prec,0.0,0.0,0.0,True
+stages seed13 stage0_pre_attack training_dynamics auroc,0.1637799286805909,0.16377992868059094,2.7755575615628914e-17,True
+stages seed13 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed13 stage0_pre_attack cross_fit auroc,0.2733061640346408,0.27330616403464086,5.551115123125783e-17,True
+stages seed13 stage0_pre_attack cross_fit prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed13 stage0_pre_attack ensemble auroc,0.2201986754966887,0.22019867549668873,2.7755575615628914e-17,True
+stages seed13 stage0_pre_attack ensemble prec,0.0,0.0,0.0,True
+stages seed13 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed13 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed13 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed13 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed13 stage1_flipped_clean_models cross_fit auroc,0.7913907284768212,0.7913907284768212,0.0,True
+stages seed13 stage1_flipped_clean_models cross_fit prec,0.4230769230769231,0.4230769230769231,0.0,True
+stages seed13 stage1_flipped_clean_models ensemble auroc,0.966760061130922,0.966760061130922,0.0,True
+stages seed13 stage1_flipped_clean_models ensemble prec,0.8076923076923077,0.8076923076923077,0.0,True
+stages seed13 stage2_poisoned_refit self_influence auroc,0.2322975038206826,0.23229750382068262,2.7755575615628914e-17,True
+stages seed13 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed13 stage2_poisoned_refit training_dynamics auroc,0.1711665817626082,0.17116658176260827,5.551115123125783e-17,True
+stages seed13 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed13 stage2_poisoned_refit cross_fit auroc,0.205552725420275,0.20555272542027508,8.326672684688674e-17,True
+stages seed13 stage2_poisoned_refit cross_fit prec,0.0,0.0,0.0,True
+stages seed13 stage2_poisoned_refit ensemble auroc,0.1762608252674478,0.1762608252674478,0.0,True
+stages seed13 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed14 stage0_pre_attack self_influence auroc,0.6953242835595776,0.6953242835595776,0.0,True
+stages seed14 stage0_pre_attack self_influence prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed14 stage0_pre_attack training_dynamics auroc,0.557315233785822,0.557315233785822,0.0,True
+stages seed14 stage0_pre_attack training_dynamics prec,0.1538461538461538,0.15384615384615385,5.551115123125783e-17,True
+stages seed14 stage0_pre_attack cross_fit auroc,0.7109100050276521,0.7109100050276521,0.0,True
+stages seed14 stage0_pre_attack cross_fit prec,0.4615384615384615,0.46153846153846156,5.551115123125783e-17,True
+stages seed14 stage0_pre_attack ensemble auroc,0.6737053795877326,0.6737053795877326,0.0,True
+stages seed14 stage0_pre_attack ensemble prec,0.3461538461538461,0.34615384615384615,5.551115123125783e-17,True
+stages seed14 stage1_flipped_clean_models self_influence auroc,0.9979889391654098,0.9979889391654098,0.0,True
+stages seed14 stage1_flipped_clean_models self_influence prec,0.9230769230769232,0.9230769230769231,1.1102230246251565e-16,True
+stages seed14 stage1_flipped_clean_models training_dynamics auroc,0.9891905480140776,0.9891905480140775,1.1102230246251565e-16,True
+stages seed14 stage1_flipped_clean_models training_dynamics prec,0.8846153846153846,0.8846153846153846,0.0,True
+stages seed14 stage1_flipped_clean_models cross_fit auroc,0.4705882352941176,0.47058823529411764,5.551115123125783e-17,True
+stages seed14 stage1_flipped_clean_models cross_fit prec,0.2692307692307692,0.2692307692307692,0.0,True
+stages seed14 stage1_flipped_clean_models ensemble auroc,0.8743086978381096,0.8743086978381096,0.0,True
+stages seed14 stage1_flipped_clean_models ensemble prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed14 stage2_poisoned_refit self_influence auroc,0.3280542986425339,0.32805429864253394,5.551115123125783e-17,True
+stages seed14 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed14 stage2_poisoned_refit training_dynamics auroc,0.2883358471593765,0.28833584715937655,5.551115123125783e-17,True
+stages seed14 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed14 stage2_poisoned_refit cross_fit auroc,0.3129713423831071,0.3129713423831071,0.0,True
+stages seed14 stage2_poisoned_refit cross_fit prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed14 stage2_poisoned_refit ensemble auroc,0.2998994469582705,0.2998994469582705,0.0,True
+stages seed14 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed15 stage0_pre_attack self_influence auroc,0.1972101972101972,0.1972101972101972,0.0,True
+stages seed15 stage0_pre_attack self_influence prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed15 stage0_pre_attack training_dynamics auroc,0.1289081289081289,0.12890812890812892,2.7755575615628914e-17,True
+stages seed15 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed15 stage0_pre_attack cross_fit auroc,0.2178932178932179,0.2178932178932179,0.0,True
+stages seed15 stage0_pre_attack cross_fit prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed15 stage0_pre_attack ensemble auroc,0.1641414141414141,0.16414141414141414,5.551115123125783e-17,True
+stages seed15 stage0_pre_attack ensemble prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed15 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed15 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed15 stage1_flipped_clean_models training_dynamics auroc,0.9997594997594996,0.9997594997594997,1.1102230246251565e-16,True
+stages seed15 stage1_flipped_clean_models training_dynamics prec,0.9629629629629628,0.9629629629629629,1.1102230246251565e-16,True
+stages seed15 stage1_flipped_clean_models cross_fit auroc,0.8075998075998077,0.8075998075998077,0.0,True
+stages seed15 stage1_flipped_clean_models cross_fit prec,0.5555555555555556,0.5555555555555556,0.0,True
+stages seed15 stage1_flipped_clean_models ensemble auroc,0.9676527176527177,0.9676527176527177,0.0,True
+stages seed15 stage1_flipped_clean_models ensemble prec,0.8148148148148148,0.8148148148148148,0.0,True
+stages seed15 stage2_poisoned_refit self_influence auroc,0.2623857623857624,0.2623857623857624,0.0,True
+stages seed15 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed15 stage2_poisoned_refit training_dynamics auroc,0.1632996632996633,0.1632996632996633,0.0,True
+stages seed15 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed15 stage2_poisoned_refit cross_fit auroc,0.2371332371332371,0.23713323713323714,2.7755575615628914e-17,True
+stages seed15 stage2_poisoned_refit cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed15 stage2_poisoned_refit ensemble auroc,0.1984126984126984,0.1984126984126984,0.0,True
+stages seed15 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed16 stage0_pre_attack self_influence auroc,0.2649572649572649,0.26495726495726496,5.551115123125783e-17,True
+stages seed16 stage0_pre_attack self_influence prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed16 stage0_pre_attack training_dynamics auroc,0.1697530864197531,0.1697530864197531,0.0,True
+stages seed16 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed16 stage0_pre_attack cross_fit auroc,0.2697056030389363,0.26970560303893637,5.551115123125783e-17,True
+stages seed16 stage0_pre_attack cross_fit prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed16 stage0_pre_attack ensemble auroc,0.219017094017094,0.21901709401709402,2.7755575615628914e-17,True
+stages seed16 stage0_pre_attack ensemble prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed16 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed16 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed16 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed16 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed16 stage1_flipped_clean_models cross_fit auroc,0.7274453941120608,0.7274453941120608,0.0,True
+stages seed16 stage1_flipped_clean_models cross_fit prec,0.4074074074074074,0.4074074074074074,0.0,True
+stages seed16 stage1_flipped_clean_models ensemble auroc,0.9515669515669516,0.9515669515669516,0.0,True
+stages seed16 stage1_flipped_clean_models ensemble prec,0.7407407407407407,0.7407407407407407,0.0,True
+stages seed16 stage2_poisoned_refit self_influence auroc,0.225071225071225,0.22507122507122507,5.551115123125783e-17,True
+stages seed16 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed16 stage2_poisoned_refit training_dynamics auroc,0.1669040835707502,0.16690408357075023,2.7755575615628914e-17,True
+stages seed16 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed16 stage2_poisoned_refit cross_fit auroc,0.25332383665717,0.25332383665717,0.0,True
+stages seed16 stage2_poisoned_refit cross_fit prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed16 stage2_poisoned_refit ensemble auroc,0.2010921177587844,0.20109211775878444,2.7755575615628914e-17,True
+stages seed16 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True
+stages seed17 stage0_pre_attack self_influence auroc,0.3032258064516129,0.3032258064516129,0.0,True
+stages seed17 stage0_pre_attack self_influence prec,0.037037037037037,0.037037037037037035,3.469446951953614e-17,True
+stages seed17 stage0_pre_attack training_dynamics auroc,0.1825567502986858,0.1825567502986858,0.0,True
+stages seed17 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed17 stage0_pre_attack cross_fit auroc,0.234647550776583,0.23464755077658303,2.7755575615628914e-17,True
+stages seed17 stage0_pre_attack cross_fit prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed17 stage0_pre_attack ensemble auroc,0.2301075268817204,0.23010752688172043,2.7755575615628914e-17,True
+stages seed17 stage0_pre_attack ensemble prec,0.0,0.0,0.0,True
+stages seed17 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed17 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed17 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed17 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed17 stage1_flipped_clean_models cross_fit auroc,0.8406212664277181,0.8406212664277181,0.0,True
+stages seed17 stage1_flipped_clean_models cross_fit prec,0.5555555555555556,0.5555555555555556,0.0,True
+stages seed17 stage1_flipped_clean_models ensemble auroc,0.9712066905615292,0.9712066905615293,1.1102230246251565e-16,True
+stages seed17 stage1_flipped_clean_models ensemble prec,0.8148148148148148,0.8148148148148148,0.0,True
+stages seed17 stage2_poisoned_refit self_influence auroc,0.3333333333333333,0.3333333333333333,0.0,True
+stages seed17 stage2_poisoned_refit self_influence prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed17 stage2_poisoned_refit training_dynamics auroc,0.2265232974910394,0.22652329749103942,2.7755575615628914e-17,True
+stages seed17 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed17 stage2_poisoned_refit cross_fit auroc,0.4045400238948626,0.4045400238948626,0.0,True
+stages seed17 stage2_poisoned_refit cross_fit prec,0.2222222222222222,0.2222222222222222,0.0,True
+stages seed17 stage2_poisoned_refit ensemble auroc,0.310752688172043,0.310752688172043,0.0,True
+stages seed17 stage2_poisoned_refit ensemble prec,0.074074074074074,0.07407407407407407,6.938893903907228e-17,True
+stages seed18 stage0_pre_attack self_influence auroc,0.7022414671421294,0.7022414671421294,0.0,True
+stages seed18 stage0_pre_attack self_influence prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed18 stage0_pre_attack training_dynamics auroc,0.5397350993377483,0.5397350993377483,0.0,True
+stages seed18 stage0_pre_attack training_dynamics prec,0.1153846153846153,0.11538461538461539,9.71445146547012e-17,True
+stages seed18 stage0_pre_attack cross_fit auroc,0.7435048395313296,0.7435048395313296,0.0,True
+stages seed18 stage0_pre_attack cross_fit prec,0.5,0.5,0.0,True
+stages seed18 stage0_pre_attack ensemble auroc,0.6864493122771268,0.6864493122771268,0.0,True
+stages seed18 stage0_pre_attack ensemble prec,0.3461538461538461,0.34615384615384615,5.551115123125783e-17,True
+stages seed18 stage1_flipped_clean_models self_influence auroc,0.9885379521141112,0.9885379521141111,1.1102230246251565e-16,True
+stages seed18 stage1_flipped_clean_models self_influence prec,0.9615384615384616,0.9615384615384616,0.0,True
+stages seed18 stage1_flipped_clean_models training_dynamics auroc,0.9918492103922568,0.9918492103922567,1.1102230246251565e-16,True
+stages seed18 stage1_flipped_clean_models training_dynamics prec,0.9230769230769232,0.9230769230769231,1.1102230246251565e-16,True
+stages seed18 stage1_flipped_clean_models cross_fit auroc,0.4243504839531329,0.42435048395313296,5.551115123125783e-17,True
+stages seed18 stage1_flipped_clean_models cross_fit prec,0.1923076923076923,0.19230769230769232,2.7755575615628914e-17,True
+stages seed18 stage1_flipped_clean_models ensemble auroc,0.8506113092205807,0.8506113092205807,0.0,True
+stages seed18 stage1_flipped_clean_models ensemble prec,0.3846153846153846,0.38461538461538464,5.551115123125783e-17,True
+stages seed18 stage2_poisoned_refit self_influence auroc,0.3094752929190015,0.30947529291900155,5.551115123125783e-17,True
+stages seed18 stage2_poisoned_refit self_influence prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed18 stage2_poisoned_refit training_dynamics auroc,0.2809475292919001,0.28094752929190014,5.551115123125783e-17,True
+stages seed18 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed18 stage2_poisoned_refit cross_fit auroc,0.314569536423841,0.31456953642384106,5.551115123125783e-17,True
+stages seed18 stage2_poisoned_refit cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed18 stage2_poisoned_refit ensemble auroc,0.2920275089149261,0.2920275089149261,0.0,True
+stages seed18 stage2_poisoned_refit ensemble prec,0.0384615384615384,0.038461538461538464,6.245004513516506e-17,True
+stages seed19 stage0_pre_attack self_influence auroc,0.2152813629323696,0.21528136293236966,5.551115123125783e-17,True
+stages seed19 stage0_pre_attack self_influence prec,0.0,0.0,0.0,True
+stages seed19 stage0_pre_attack training_dynamics auroc,0.1507485802787816,0.15074858027878163,2.7755575615628914e-17,True
+stages seed19 stage0_pre_attack training_dynamics prec,0.0,0.0,0.0,True
+stages seed19 stage0_pre_attack cross_fit auroc,0.2173464119772844,0.21734641197728446,5.551115123125783e-17,True
+stages seed19 stage0_pre_attack cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed19 stage0_pre_attack ensemble auroc,0.1806917914300464,0.18069179143004646,5.551115123125783e-17,True
+stages seed19 stage0_pre_attack ensemble prec,0.0,0.0,0.0,True
+stages seed19 stage1_flipped_clean_models self_influence auroc,1.0,1.0,0.0,True
+stages seed19 stage1_flipped_clean_models self_influence prec,1.0,1.0,0.0,True
+stages seed19 stage1_flipped_clean_models training_dynamics auroc,1.0,1.0,0.0,True
+stages seed19 stage1_flipped_clean_models training_dynamics prec,1.0,1.0,0.0,True
+stages seed19 stage1_flipped_clean_models cross_fit auroc,0.8742901393908106,0.8742901393908106,0.0,True
+stages seed19 stage1_flipped_clean_models cross_fit prec,0.6153846153846154,0.6153846153846154,0.0,True
+stages seed19 stage1_flipped_clean_models ensemble auroc,0.980898296334538,0.980898296334538,0.0,True
+stages seed19 stage1_flipped_clean_models ensemble prec,0.8846153846153846,0.8846153846153846,0.0,True
+stages seed19 stage2_poisoned_refit self_influence auroc,0.2901393908105317,0.29013939081053175,5.551115123125783e-17,True
+stages seed19 stage2_poisoned_refit self_influence prec,0.0,0.0,0.0,True
+stages seed19 stage2_poisoned_refit training_dynamics auroc,0.1923076923076923,0.19230769230769232,2.7755575615628914e-17,True
+stages seed19 stage2_poisoned_refit training_dynamics prec,0.0,0.0,0.0,True
+stages seed19 stage2_poisoned_refit cross_fit auroc,0.3291171915332989,0.32911719153329894,5.551115123125783e-17,True
+stages seed19 stage2_poisoned_refit cross_fit prec,0.0769230769230769,0.07692307692307693,2.7755575615628914e-17,True
+stages seed19 stage2_poisoned_refit ensemble auroc,0.2474186886938564,0.24741868869385647,8.326672684688674e-17,True
+stages seed19 stage2_poisoned_refit ensemble prec,0.0,0.0,0.0,True

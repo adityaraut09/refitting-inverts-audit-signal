@@ -1,0 +1,404 @@
+% repeated_split_stability.py :: load_preference_subset(n=300, seed=0)
+\newcommand{\vNPool}{300}
+% repeated_split_meta.csv :: seed, nunique
+\newcommand{\vNSeeds}{20}
+% repeated_split_meta.csv :: n_filtered, min
+\newcommand{\vNTrainMin}{175}
+% repeated_split_meta.csv :: n_filtered, max
+\newcommand{\vNTrainMax}{183}
+% repeated_split_meta.csv :: zero_norm_removed, min
+\newcommand{\vZeroNormMin}{27}
+% repeated_split_meta.csv :: zero_norm_removed, max
+\newcommand{\vZeroNormMax}{35}
+% repeated_split_meta.csv :: zero_norm_removed / n_pre_filter
+\newcommand{\vZeroNormPct}{15}
+% repeated_split_meta.csv :: budget, min
+\newcommand{\vBudgetMin}{26}
+% repeated_split_meta.csv :: budget, max
+\newcommand{\vBudgetMax}{27}
+% evidence/reproduction_gates.csv :: row count
+\newcommand{\vNGates}{35}
+% results/holdout_reuse_audit.json :: lam_sweep, key count
+\newcommand{\vLamSelNGrid}{4}
+% results/holdout_reuse_audit.json :: holdout_n
+\newcommand{\vLamSelNHoldout}{90}
+% results/holdout_reuse_audit.json :: lam_sweep.1e-02.acc_all_90
+\newcommand{\vLamSelAccEmTwo}{0.5556}
+% results/holdout_reuse_audit.json :: lam_sweep.1e-03.acc_all_90
+\newcommand{\vLamSelAccEmThree}{0.5556}
+% results/holdout_reuse_audit.json :: lam_sweep.1e-04.acc_all_90
+\newcommand{\vLamSelAccEmFour}{0.6000}
+% results/holdout_reuse_audit.json :: lam_sweep.1e-05.acc_all_90
+\newcommand{\vLamSelAccEmFive}{0.5778}
+% repeated_split_summary.csv :: attack=random_flip, detector=self_influence, auroc, mean
+\newcommand{\vAurocRandSelfInf}{0.6047}
+% repeated_split_summary.csv :: attack=random_flip, detector=self_influence, auroc, sd
+\newcommand{\vAurocRandSelfInfSd}{0.0455}
+% repeated_split_summary.csv :: attack=random_flip, detector=self_influence, precision_at_budget, mean
+\newcommand{\vPrecRandSelfInf}{0.2454}
+% repeated_split_summary.csv :: attack=random_flip, detector=self_influence, precision_at_budget, sd
+\newcommand{\vPrecRandSelfInfSd}{0.0785}
+% repeated_split_summary.csv :: attack=random_flip, detector=cross_fit, auroc, mean
+\newcommand{\vAurocRandCrossFit}{0.5983}
+% repeated_split_summary.csv :: attack=random_flip, detector=cross_fit, auroc, sd
+\newcommand{\vAurocRandCrossFitSd}{0.0477}
+% repeated_split_summary.csv :: attack=random_flip, detector=cross_fit, precision_at_budget, mean
+\newcommand{\vPrecRandCrossFit}{0.2205}
+% repeated_split_summary.csv :: attack=random_flip, detector=cross_fit, precision_at_budget, sd
+\newcommand{\vPrecRandCrossFitSd}{0.0631}
+% repeated_split_summary.csv :: attack=random_flip, detector=training_dynamics, auroc, mean
+\newcommand{\vAurocRandTrainDyn}{0.5794}
+% repeated_split_summary.csv :: attack=random_flip, detector=training_dynamics, auroc, sd
+\newcommand{\vAurocRandTrainDynSd}{0.0498}
+% repeated_split_summary.csv :: attack=random_flip, detector=training_dynamics, precision_at_budget, mean
+\newcommand{\vPrecRandTrainDyn}{0.1873}
+% repeated_split_summary.csv :: attack=random_flip, detector=training_dynamics, precision_at_budget, sd
+\newcommand{\vPrecRandTrainDynSd}{0.0621}
+% repeated_split_summary.csv :: attack=random_flip, detector=ensemble, auroc, mean
+\newcommand{\vAurocRandEns}{0.6027}
+% repeated_split_summary.csv :: attack=random_flip, detector=ensemble, auroc, sd
+\newcommand{\vAurocRandEnsSd}{0.0448}
+% repeated_split_summary.csv :: attack=random_flip, detector=ensemble, precision_at_budget, mean
+\newcommand{\vPrecRandEns}{0.2377}
+% repeated_split_summary.csv :: attack=random_flip, detector=ensemble, precision_at_budget, sd
+\newcommand{\vPrecRandEnsSd}{0.0676}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=self_influence, auroc, mean
+\newcommand{\vAurocGradSelfInf}{0.3053}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=self_influence, auroc, sd
+\newcommand{\vAurocGradSelfInfSd}{0.0409}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=self_influence, precision_at_budget, mean
+\newcommand{\vPrecGradSelfInf}{0.0151}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=self_influence, precision_at_budget, sd
+\newcommand{\vPrecGradSelfInfSd}{0.0257}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=cross_fit, auroc, mean
+\newcommand{\vAurocGradCrossFit}{0.3085}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=cross_fit, auroc, sd
+\newcommand{\vAurocGradCrossFitSd}{0.0448}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=cross_fit, precision_at_budget, mean
+\newcommand{\vPrecGradCrossFit}{0.0489}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=cross_fit, precision_at_budget, sd
+\newcommand{\vPrecGradCrossFitSd}{0.0501}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=training_dynamics, auroc, mean
+\newcommand{\vAurocGradTrainDyn}{0.2620}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=training_dynamics, auroc, sd
+\newcommand{\vAurocGradTrainDynSd}{0.0589}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=training_dynamics, precision_at_budget, mean
+\newcommand{\vPrecGradTrainDyn}{0.0000}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=training_dynamics, precision_at_budget, sd
+\newcommand{\vPrecGradTrainDynSd}{0.0000}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=ensemble, auroc, mean
+\newcommand{\vAurocGradEns}{0.2770}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=ensemble, auroc, sd
+\newcommand{\vAurocGradEnsSd}{0.0455}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=ensemble, precision_at_budget, mean
+\newcommand{\vPrecGradEns}{0.0094}
+% evidence/directional_orientation/orientation_per_split.csv :: attack=gradient_flip, detector=ensemble, precision_at_budget, sd
+\newcommand{\vPrecGradEnsSd}{0.0206}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=self_influence, auroc, mean
+\newcommand{\vAurocAmbSelfInf}{0.4761}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=self_influence, auroc, sd
+\newcommand{\vAurocAmbSelfInfSd}{0.0417}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=self_influence, precision_at_budget, mean
+\newcommand{\vPrecAmbSelfInf}{0.0718}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=self_influence, precision_at_budget, sd
+\newcommand{\vPrecAmbSelfInfSd}{0.0427}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=cross_fit, auroc, mean
+\newcommand{\vAurocAmbCrossFit}{0.6108}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=cross_fit, auroc, sd
+\newcommand{\vAurocAmbCrossFitSd}{0.0367}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=cross_fit, precision_at_budget, mean
+\newcommand{\vPrecAmbCrossFit}{0.0397}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=cross_fit, precision_at_budget, sd
+\newcommand{\vPrecAmbCrossFitSd}{0.0359}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=training_dynamics, auroc, mean
+\newcommand{\vAurocAmbTrainDyn}{0.8265}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=training_dynamics, auroc, sd
+\newcommand{\vAurocAmbTrainDynSd}{0.0301}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=training_dynamics, precision_at_budget, mean
+\newcommand{\vPrecAmbTrainDyn}{0.5452}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=training_dynamics, precision_at_budget, sd
+\newcommand{\vPrecAmbTrainDynSd}{0.0406}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=ensemble, auroc, mean
+\newcommand{\vAurocAmbEns}{0.6466}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=ensemble, auroc, sd
+\newcommand{\vAurocAmbEnsSd}{0.0361}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=ensemble, precision_at_budget, mean
+\newcommand{\vPrecAmbEns}{0.1455}
+% repeated_split_summary.csv :: attack=ambiguity_flip, detector=ensemble, precision_at_budget, sd
+\newcommand{\vPrecAmbEnsSd}{0.0521}
+% repeated_split_summary.csv :: block=E3, alpha=0.0, detector=cross_fit, mean
+\newcommand{\vEThreeCrossFitQZero}{0.6213}
+% repeated_split_summary.csv :: block=E3, alpha=0.0, detector=self_influence, mean
+\newcommand{\vEThreeSelfInfQZero}{0.5339}
+% repeated_split_summary.csv :: block=E3, alpha=0.0, detector=training_dynamics, mean
+\newcommand{\vEThreeTrainDynQZero}{0.3002}
+% repeated_split_summary.csv :: block=E3, alpha=0.25, detector=cross_fit, mean
+\newcommand{\vEThreeCrossFitQTwentyFive}{0.6132}
+% repeated_split_summary.csv :: block=E3, alpha=0.25, detector=self_influence, mean
+\newcommand{\vEThreeSelfInfQTwentyFive}{0.6039}
+% repeated_split_summary.csv :: block=E3, alpha=0.25, detector=training_dynamics, mean
+\newcommand{\vEThreeTrainDynQTwentyFive}{0.4315}
+% repeated_split_summary.csv :: block=E3, alpha=0.5, detector=cross_fit, mean
+\newcommand{\vEThreeCrossFitQFifty}{0.5713}
+% repeated_split_summary.csv :: block=E3, alpha=0.5, detector=self_influence, mean
+\newcommand{\vEThreeSelfInfQFifty}{0.6382}
+% repeated_split_summary.csv :: block=E3, alpha=0.5, detector=training_dynamics, mean
+\newcommand{\vEThreeTrainDynQFifty}{0.5439}
+% repeated_split_summary.csv :: block=E3, alpha=0.75, detector=cross_fit, mean
+\newcommand{\vEThreeCrossFitQSeventyFive}{0.5973}
+% repeated_split_summary.csv :: block=E3, alpha=0.75, detector=self_influence, mean
+\newcommand{\vEThreeSelfInfQSeventyFive}{0.6859}
+% repeated_split_summary.csv :: block=E3, alpha=0.75, detector=training_dynamics, mean
+\newcommand{\vEThreeTrainDynQSeventyFive}{0.6745}
+% repeated_split_summary.csv :: block=E3, alpha=1.0, detector=cross_fit, mean
+\newcommand{\vEThreeCrossFitQHundred}{0.6108}
+% repeated_split_summary.csv :: block=E3, alpha=1.0, detector=self_influence, mean
+\newcommand{\vEThreeSelfInfQHundred}{0.4761}
+% repeated_split_summary.csv :: block=E3, alpha=1.0, detector=training_dynamics, mean
+\newcommand{\vEThreeTrainDynQHundred}{0.8265}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_pre_attack__self_influence, mean
+\newcommand{\vStgAurocPreSelfInf}{0.5508}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_pre_attack__self_influence, mean
+\newcommand{\vStgPrecPreSelfInf}{0.2542}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_pre_attack__cross_fit, mean
+\newcommand{\vStgAurocPreCrossFit}{0.5726}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_pre_attack__cross_fit, mean
+\newcommand{\vStgPrecPreCrossFit}{0.3269}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_pre_attack__training_dynamics, mean
+\newcommand{\vStgAurocPreTrainDyn}{0.4270}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_pre_attack__training_dynamics, mean
+\newcommand{\vStgPrecPreTrainDyn}{0.1112}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_pre_attack__ensemble, mean
+\newcommand{\vStgAurocPreEns}{0.5250}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_pre_attack__ensemble, mean
+\newcommand{\vStgPrecPreEns}{0.2412}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, margin_rev_pre_attack, mean
+\newcommand{\vMargFlipPre}{1.629}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, margin_ret_pre_attack, mean
+\newcommand{\vMargCleanPre}{1.418}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_clean_head__self_influence, mean
+\newcommand{\vStgAurocCleanHeadSelfInf}{0.9910}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_clean_head__self_influence, mean
+\newcommand{\vStgPrecCleanHeadSelfInf}{0.9604}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_clean_head__cross_fit, mean
+\newcommand{\vStgAurocCleanHeadCrossFit}{0.5702}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_clean_head__cross_fit, mean
+\newcommand{\vStgPrecCleanHeadCrossFit}{0.2982}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_clean_head__training_dynamics, mean
+\newcommand{\vStgAurocCleanHeadTrainDyn}{0.9936}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_clean_head__training_dynamics, mean
+\newcommand{\vStgPrecCleanHeadTrainDyn}{0.9360}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_clean_head__ensemble, mean
+\newcommand{\vStgAurocCleanHeadEns}{0.8984}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_clean_head__ensemble, mean
+\newcommand{\vStgPrecCleanHeadEns}{0.5546}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, margin_rev_clean_head, mean
+\newcommand{\vMargFlipCleanHead}{-1.629}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, margin_ret_clean_head, mean
+\newcommand{\vMargCleanCleanHead}{1.418}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_poisoned_refit__self_influence, mean
+\newcommand{\vStgAurocRefitSelfInf}{0.3053}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_poisoned_refit__self_influence, mean
+\newcommand{\vStgPrecRefitSelfInf}{0.0151}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_poisoned_refit__cross_fit, mean
+\newcommand{\vStgAurocRefitCrossFit}{0.3085}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_poisoned_refit__cross_fit, mean
+\newcommand{\vStgPrecRefitCrossFit}{0.0489}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_poisoned_refit__training_dynamics, mean
+\newcommand{\vStgAurocRefitTrainDyn}{0.2620}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_poisoned_refit__training_dynamics, mean
+\newcommand{\vStgPrecRefitTrainDyn}{0.0000}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, auroc_poisoned_refit__ensemble, mean
+\newcommand{\vStgAurocRefitEns}{0.2770}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, prec_poisoned_refit__ensemble, mean
+\newcommand{\vStgPrecRefitEns}{0.0094}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, margin_rev_poisoned_refit, mean
+\newcommand{\vMargFlipRefit}{2.778}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, margin_ret_poisoned_refit, mean
+\newcommand{\vMargCleanRefit}{1.776}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, 1 - auroc_poisoned_refit__self_influence, mean
+\newcommand{\vStgInvRefitSelfInf}{0.6947}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, 1 - auroc_poisoned_refit__cross_fit, mean
+\newcommand{\vStgInvRefitCrossFit}{0.6915}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, 1 - auroc_poisoned_refit__training_dynamics, mean
+\newcommand{\vStgInvRefitTrainDyn}{0.7380}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, 1 - auroc_poisoned_refit__ensemble, mean
+\newcommand{\vStgInvRefitEns}{0.7230}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, relative_eigengap, mean
+\newcommand{\vEigGap}{0.366}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, eig1/eig2, mean
+\newcommand{\vEigRatio}{1.58}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=raw, raw_equals_canon_plus, sum
+\newcommand{\vNRawCanon}{3}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, auroc_poisoned_refit__self_influence, mean
+\newcommand{\vMinusAurocSelfInf}{0.2814}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, auroc_poisoned_refit__cross_fit, mean
+\newcommand{\vMinusAurocCrossFit}{0.2730}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, auroc_poisoned_refit__training_dynamics, mean
+\newcommand{\vMinusAurocTrainDyn}{0.2188}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, auroc_poisoned_refit__ensemble, mean
+\newcommand{\vMinusAurocEns}{0.2416}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, acc_poisoned, mean
+\newcommand{\vPlusAcc}{0.4917}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, logloss_poisoned, mean
+\newcommand{\vPlusLoss}{0.8414}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, theta_displacement, mean
+\newcommand{\vPlusDisp}{33.90}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, acc_poisoned, mean
+\newcommand{\vMinusAcc}{0.4678}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, logloss_poisoned, mean
+\newcommand{\vMinusLoss}{0.8128}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, theta_displacement, mean
+\newcommand{\vMinusDisp}{32.45}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, prec_poisoned_refit__self_influence, mean
+\newcommand{\vMinusPrecSelfInf}{0.0075}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, prec_poisoned_refit__cross_fit, mean
+\newcommand{\vMinusPrecCrossFit}{0.0454}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, prec_poisoned_refit__training_dynamics, mean
+\newcommand{\vMinusPrecTrainDyn}{0.0000}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, prec_poisoned_refit__ensemble, mean
+\newcommand{\vMinusPrecEns}{0.0038}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_minus, margin gap, mean
+\newcommand{\vMinusMargGap}{1.096}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, acc_clean, mean
+\newcommand{\vAccClean}{0.5261}
+% evidence/directional_orientation/orientation_per_split.csv :: arm=canon_plus, acc_poisoned, mean
+\newcommand{\vAccPoisonedDir}{0.4917}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=leverage_zT_Hinv_z, mean_flipped
+\newcommand{\vLevFlip}{1179}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=leverage_zT_Hinv_z, mean_unflipped
+\newcommand{\vLevClean}{819}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=leverage_zT_Hinv_z, ratio_flipped_over_unflipped
+\newcommand{\vLevRatio}{1.439}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=disagreement_sigma_neg_m_sq, mean_flipped
+\newcommand{\vDisFlip}{0.0119}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=disagreement_sigma_neg_m_sq, mean_unflipped
+\newcommand{\vDisClean}{0.0603}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=disagreement_sigma_neg_m_sq, ratio_flipped_over_unflipped
+\newcommand{\vDisRatio}{0.198}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=self_influence_product, mean_flipped
+\newcommand{\vSelfInfValFlip}{6.12}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=self_influence_product, mean_unflipped
+\newcommand{\vSelfInfValClean}{15.54}
+% gradient_flip_forensics_si_components.csv :: stage=stage2_poisoned_refit, component=self_influence_product, ratio_flipped_over_unflipped
+\newcommand{\vSelfInfValRatio}{0.394}
+% evidence/absorption_rank_agreement.csv :: n_conditions
+\newcommand{\vNAbsorbCond}{7}
+% evidence/absorption_rank_agreement.csv :: detector=training_dynamics, index=disagreement ratio, spearman_rho
+\newcommand{\vRhoTrainDyn}{1.000}
+% evidence/absorption_rank_agreement.csv :: detector=self_influence, index=disagreement ratio, spearman_rho
+\newcommand{\vRhoSelfInf}{0.429}
+% evidence/absorption_rank_agreement.csv :: detector=cross_fit, index=disagreement ratio, spearman_rho
+\newcommand{\vRhoCrossFit}{0.071}
+% evidence/absorption_rank_agreement.csv :: detector=ensemble, index=disagreement ratio, spearman_rho
+\newcommand{\vRhoEns}{0.964}
+% evidence/absorption_index_summary.csv :: family|condition=E1|gradient_flip, disagreement_ratio
+\newcommand{\vDisRatioGrad}{0.195}
+% evidence/absorption_index_summary.csv :: family|condition=E3|alpha=0.0, disagreement_ratio
+\newcommand{\vDisRatioAlphaZero}{0.535}
+% evidence/absorption_index_summary.csv :: family|condition=E3|alpha=1.0, disagreement_ratio
+\newcommand{\vDisRatioAlphaOne}{3.337}
+% evidence/absorption_index_summary.csv :: family|condition=E1|random_flip, disagreement_ratio
+\newcommand{\vDisRatioRand}{1.227}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac<=0.01, budget_min=budget_max=1
+\newcommand{\vETwoNDegen}{3}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.001, auroc_mean
+\newcommand{\vETwoAurocB}{0.6576}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.001, acc_delta_mean
+\newcommand{\vETwoAccDeltaB}{-0.0061}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.001, drift_mean
+\newcommand{\vETwoDriftB}{7.0}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.005, auroc_mean
+\newcommand{\vETwoAurocF}{0.6576}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.005, acc_delta_mean
+\newcommand{\vETwoAccDeltaF}{-0.0061}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.005, drift_mean
+\newcommand{\vETwoDriftF}{7.0}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.01, auroc_mean
+\newcommand{\vETwoAurocBA}{0.6576}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.01, acc_delta_mean
+\newcommand{\vETwoAccDeltaBA}{-0.0061}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.01, drift_mean
+\newcommand{\vETwoDriftBA}{7.0}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.02, auroc_mean
+\newcommand{\vETwoAurocCA}{0.6307}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.02, acc_delta_mean
+\newcommand{\vETwoAccDeltaCA}{-0.0067}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.02, drift_mean
+\newcommand{\vETwoDriftCA}{11.8}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.03, auroc_mean
+\newcommand{\vETwoAurocDA}{0.5948}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.03, acc_delta_mean
+\newcommand{\vETwoAccDeltaDA}{-0.0017}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.03, drift_mean
+\newcommand{\vETwoDriftDA}{15.5}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.05, auroc_mean
+\newcommand{\vETwoAurocFA}{0.6025}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.05, acc_delta_mean
+\newcommand{\vETwoAccDeltaFA}{-0.0100}
+% evidence/e2_budget_sweep_summary.csv :: budget_frac=0.05, drift_mean
+\newcommand{\vETwoDriftFA}{20.4}
+% evidence/e4_per_seed_20splits.csv :: per-seed nunique of k
+\newcommand{\vEFourNDepths}{7}
+% evidence/e4_per_seed_20splits.csv :: k, nunique
+\newcommand{\vEFourNDistinctK}{8}
+% evidence/e4_per_seed_20splits.csv :: is_budget_depth, acc_full_clean, mean
+\newcommand{\vEFourAccClean}{0.5261}
+% arithmetic identity :: log(2)
+\newcommand{\vUninfLoss}{0.6931}
+% evidence/e4_per_seed_20splits.csv :: is_budget_depth, logloss_full_clean, mean
+\newcommand{\vEFourLossClean}{0.7258}
+% evidence/e4_per_seed_20splits.csv :: logloss_full_clean > log(2), sum
+\newcommand{\vEFourLossCleanAboveUninf}{14}
+% evidence/e4_per_seed_20splits.csv :: is_budget_depth, acc_unsafe, mean
+\newcommand{\vEFourAccUnsafe}{0.5261}
+% evidence/e4_per_seed_20splits.csv :: acc_unsafe - acc_full_clean, mean
+\newcommand{\vEFourAttackAcc}{0.0000}
+% evidence/e4_per_seed_20splits.csv :: acc_unsafe < acc_full_clean, sum
+\newcommand{\vEFourAttackAccWorse}{11}
+% evidence/e4_per_seed_20splits.csv :: logloss_unsafe - logloss_full_clean, mean
+\newcommand{\vEFourAttackLoss}{+0.0238}
+% evidence/e4_per_seed_20splits.csv :: logloss_unsafe > logloss_full_clean, sum
+\newcommand{\vEFourAttackLossWorse}{13}
+% evidence/e4_per_seed_20splits.csv :: is_budget_depth, precision_of_removal, mean
+\newcommand{\vEFourPrecBudget}{0.5452}
+% evidence/e4_per_seed_20splits.csv :: budget / n_train, mean
+\newcommand{\vEFourPrevalence}{0.1479}
+% evidence/e4_per_seed_20splits.csv :: precision_of_removal > budget/n_train, sum
+\newcommand{\vEFourPrecAbovePrev}{140}
+% evidence/e4_per_seed_20splits.csv :: row count
+\newcommand{\vEFourNCells}{140}
+% evidence/e4_summary_20splits.csv :: k=5, precision_of_removal_mean
+\newcommand{\vEFourPrecShallow}{0.8800}
+% evidence/e4_summary_20splits.csv :: k=50, precision_of_removal_mean
+\newcommand{\vEFourPrecDeep}{0.3660}
+% evidence/e4_per_seed_20splits.csv :: acc_remediated - acc_unsafe, mean
+\newcommand{\vEFourRemVsNoneAcc}{+0.0039}
+% evidence/e4_per_seed_20splits.csv :: acc_remediated > acc_unsafe, sum
+\newcommand{\vEFourRemBetterAcc}{10}
+% evidence/e4_per_seed_20splits.csv :: acc_remediated < acc_unsafe, sum
+\newcommand{\vEFourRemWorseAcc}{5}
+% evidence/e4_per_seed_20splits.csv :: acc_remediated == acc_unsafe, sum
+\newcommand{\vEFourRemEqualAcc}{5}
+% evidence/e4_per_seed_20splits.csv :: logloss_remediated - logloss_unsafe, mean
+\newcommand{\vEFourRemVsNoneLoss}{+0.0161}
+% evidence/e4_per_seed_20splits.csv :: logloss_remediated > logloss_unsafe, sum
+\newcommand{\vEFourRemWorseLoss}{17}
+% evidence/e4_summary_20splits.csv :: k=5, logloss_remediated_mean - logloss_unsafe_mean
+\newcommand{\vEFourLossPenShallow}{+0.0029}
+% evidence/e4_summary_20splits.csv :: k=50, logloss_remediated_mean - logloss_unsafe_mean
+\newcommand{\vEFourLossPenDeep}{+0.0283}
+% evidence/e4_per_seed_20splits.csv :: logloss_matched_clean_cf - logloss_full_clean, mean
+\newcommand{\vEFourCompLoss}{+0.0235}
+% evidence/e4_per_seed_20splits.csv :: logloss_matched_clean_cf > logloss_full_clean, sum
+\newcommand{\vEFourCompLossWorse}{18}
+% evidence/e4_per_seed_20splits.csv :: logloss_remediated - logloss_matched_clean_cf, mean
+\newcommand{\vEFourResidLoss}{+0.0163}
+% evidence/e4_per_seed_20splits.csv :: logloss_remediated > logloss_matched_clean_cf, sum
+\newcommand{\vEFourResidLossWorse}{12}
+% evidence/e4_per_seed_20splits.csv :: is_budget_depth, poisoned_surviving, mean
+\newcommand{\vEFourSurvive}{12.1}
+% evidence/e4_per_seed_20splits.csv :: is_budget_depth, mcnemar_p < 0.05, sum
+\newcommand{\vEFourMcNemarSig}{1}
+% evidence/e4_per_seed_20splits.csv :: seed=0, is_budget_depth, acc_gap_remed_minus_matched
+\newcommand{\vEFourSeedZeroGap}{-0.0556}

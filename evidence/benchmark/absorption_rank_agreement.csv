@@ -1,0 +1,9 @@
+detector,index,n_conditions,spearman_rho,p_value
+training_dynamics,disagreement ratio,7,1.0,0.0
+training_dynamics,margin gap,7,-1.0,0.0
+self_influence,disagreement ratio,7,0.42857142857142866,0.3373683110858241
+self_influence,margin gap,7,-0.42857142857142866,0.3373683110858241
+cross_fit,disagreement ratio,7,0.07142857142857144,0.8790481931481541
+cross_fit,margin gap,7,-0.07142857142857144,0.8790481931481541
+ensemble,disagreement ratio,7,0.9642857142857145,0.0004541491691941692
+ensemble,margin gap,7,-0.9642857142857145,0.0004541491691941692

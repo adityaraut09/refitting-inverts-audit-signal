@@ -1,0 +1,57 @@
+{
+  "holdout_n": 90,
+  "holdout_zero_norm": 8,
+  "holdout_accuracy_ceiling": 0.9111111111111111,
+  "holdout_filtered": false,
+  "holdout_nonzero_rows": 82,
+  "denominator_note": "accuracy() is mean(margins > 0). A zero-norm row has margin exactly 0 for any theta, so it is always counted incorrect. Unfiltered accuracy is c/90 and nonzero-only accuracy is c/82 for the same count c of correct predictions, so the gap is c*8/(82*90). It scales with c and is NOT a constant offset.",
+  "max_possible_gap_pp": 8.888888888888891,
+  "max_gap_note": "100*(1 - 82/90) = 8.89 pp is the MAXIMUM gap, reached only if all 82 nonzero rows are correct. It is the ceiling gap, not the depression applied to any reported accuracy.",
+  "observed": {
+    "clean oracle": {
+      "correct": 54,
+      "acc_all_90": 0.6,
+      "acc_nonzero_82": 0.6585365853658537,
+      "diff_pp": 5.853658536585371
+    },
+    "unsafe (poisoned)": {
+      "correct": 52,
+      "acc_all_90": 0.5777777777777777,
+      "acc_nonzero_82": 0.6341463414634146,
+      "diff_pp": 5.636856368563691
+    },
+    "remediated k=26": {
+      "correct": 47,
+      "acc_all_90": 0.5222222222222223,
+      "acc_nonzero_82": 0.573170731707317,
+      "diff_pp": 5.094850948509477
+    }
+  },
+  "lam_sweep": {
+    "1e-02": {
+      "correct": 50,
+      "acc_all_90": 0.5555555555555556,
+      "acc_nonzero_82": 0.6097560975609756,
+      "diff_pp": 5.420054200542001
+    },
+    "1e-03": {
+      "correct": 50,
+      "acc_all_90": 0.5555555555555556,
+      "acc_nonzero_82": 0.6097560975609756,
+      "diff_pp": 5.420054200542001
+    },
+    "1e-04": {
+      "correct": 54,
+      "acc_all_90": 0.6,
+      "acc_nonzero_82": 0.6585365853658537,
+      "diff_pp": 5.853658536585371
+    },
+    "1e-05": {
+      "correct": 52,
+      "acc_all_90": 0.5777777777777777,
+      "acc_nonzero_82": 0.6341463414634146,
+      "diff_pp": 5.636856368563691
+    }
+  },
+  "superseded_wording": "'the 8 zero-norm holdout rows depress every reported accuracy by roughly 8.9 points'. Incorrect: that conflates the ceiling gap with the actual per-model gap."
+}

@@ -1,0 +1,28 @@
+\caption{The ranking inverts after the poisoned refit. Identical reversed
+comparisons, scored under the head fit on the original data and under the head
+refit on the poisoned data. Directional attack, mean over \vNSeeds\ splits.
+Under the original head self-influence and the final-margin score separate the
+reversals almost perfectly (\vStgAurocCleanHeadSelfInf\ and
+\vStgAurocCleanHeadTrainDyn), the ensemble reaches \vStgAurocCleanHeadEns, and
+the out-of-fold score reaches only \vStgAurocCleanHeadCrossFit. After the refit
+all four fall below chance. The attack uses the canonical
+$+v$ orientation defined in Section~\ref{sec:setup}.
+$\bar m_{\mathrm{rev}}$ is the mean signed margin of the reversed comparisons;
+retained comparisons sit at \vMargCleanRefit\ after the refit, so the reversals
+end up with the larger positive margins. Row two is an oracle diagnostic and not
+a deployable detector: it requires a head fit on data an auditor does not have.}
+\label{tab:stages}
+\centering
+\footnotesize
+\begin{tabular}{@{}l r cc cc cc cc@{}}
+\toprule
+& & \multicolumn{2}{c}{self-infl.} & \multicolumn{2}{c}{out-of-fold}
+& \multicolumn{2}{c}{final marg.} & \multicolumn{2}{c}{ensemble} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+\textbf{Scored under} & $\bar m_{\mathrm{rev}}$ & AUR. & pr. & AUR. & pr. & AUR. & pr. & AUR. & pr. \\
+\midrule
+original labels, original head & $+$1.63 & 0.551 & 0.254 & 0.573 & 0.327 & 0.427 & 0.111 & 0.525 & 0.241 \\
+reversed labels, original head & $-$1.63 & 0.991 & 0.960 & 0.570 & 0.298 & 0.994 & 0.936 & 0.898 & 0.555 \\
+reversed labels, poisoned refit & $+$2.78 & 0.305 & 0.015 & 0.309 & 0.049 & 0.262 & 0.000 & 0.277 & 0.009 \\
+\bottomrule
+\end{tabular}
